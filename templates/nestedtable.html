@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/c9.css' %}">
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <td>First Nested Table</td>
+            <td>
+                <ul type="disc">
+                    <li>PYTHON</li>
+                    <li>CSS</li>
+                    <li>JAVA</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="{% url 'table' %}">table.html page </a>
+            </td>
+            <td>
+                <img src="{% static 'images/Screenshot (1).png' %}" width="100" height="100">
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
